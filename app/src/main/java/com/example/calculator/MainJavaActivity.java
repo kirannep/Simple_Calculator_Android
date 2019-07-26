@@ -83,8 +83,11 @@ public class MainJavaActivity extends AppCompatActivity {
                 String numberTwo = etNumberTwo.getText().toString();
                 int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
-                int divide = a/b;
-                if (b != 0){
+
+                if (b == 0){
+                    tvDivide.setText("the num can't be zero");
+                }else{
+                    int divide = a/b;
                     tvDivide.setText(Integer.toString(divide));
                 }
             }
