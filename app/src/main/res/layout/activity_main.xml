@@ -1,25 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-           >
+>
 
     <!--android:layout_marginStart="30dp"-->
     <!--android:background="@color/colorPrimary">-->
-    <TextView android:layout_width="wrap_content"
+    <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tv_user_name"
               android:textColor="@color/labelColor"
-              android:text="@string/label_myname"
+              tools:text="@string/tv_name"
               android:textSize="70sp"
+    />
+    <!--this line should go inside textview =>android:text="@string/label_purple"-->
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/et_name"
+              android:hint="@string/hint_name"
+              android:layout_marginTop="@dimen/home_margin_top"
+              android:inputType="text"
+    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save"
+            android:text="@string/label_save"
+            android:layout_marginTop="@dimen/home_margin_top"
+            android:layout_gravity="center_horizontal"
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="2"
+                  android:layout_marginTop="@dimen/home_margin_top"
+    >
+
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_one"
+                  android:hint = "enter a number"
+                  android:inputType="number"
+                  android:layout_weight="1"
+        />
+
+         <EditText android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/et_number_two"
+                   android:hint = "enter a number"
+                   android:inputType="number"
+                   android:layout_weight="1"
+         />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_result"
+              tools:text="Result"
+              android:textSize="30sp"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:text="Add"
     />
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="@string/label_intro"
-
+              android:id="@+id/tv_subtract"
+              tools:text="Subtract"
+              android:textSize="30sp"
     />
-    <!--this line should go inside textview =>android:text="@string/label_purple"-->
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_subtract"
+            android:text="Subtract"
+    />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_multiply"
+              tools:text="Multiply"
+              android:textSize="30sp"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_multiply"
+            android:text="multiply"
+    />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_divide"
+              tools:text="Divide"
+              android:textSize="30sp"
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_divide"
+            android:text="Divide"
+    />
 
 </LinearLayout>

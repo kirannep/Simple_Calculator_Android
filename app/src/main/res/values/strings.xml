@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="label_purple">Name:</string>
     <string name="label_name">label_name</string>
-    <string name="label_myname">Kiran Nepali</string>
     <string name="label_intro">hello, my name is kiran</string>
+    <string name="hint_name">Please enter your name</string>
+    <string name="label_save">Save</string>
+    <string name="tv_name">Name:</string>
 </resources>
