@@ -46,7 +46,6 @@ public class MainJavaActivity extends AppCompatActivity {
                 int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
                 int result = a+b;
-
                 tvResult.setText(Integer.toString(result));
 
             }
