@@ -80,11 +80,12 @@ public class MainJavaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String numberOne = etNumberOne.getText().toString();
                 String numberTwo = etNumberTwo.getText().toString();
+
                 int a = Integer.parseInt(numberOne);
                 int b = Integer.parseInt(numberTwo);
 
                 if (b == 0){
-                    tvDivide.setText("the num can't be zero");
+                    tvDivide.setText("the input number can't be zero");
                 }else{
                     int divide = a/b;
                     tvDivide.setText(Integer.toString(divide));
